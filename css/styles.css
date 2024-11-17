@@ -20,5 +20,98 @@ ul {
 }
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family:  "Space Mono", monospace;
+  background-color:#ffffff ;
+}
+.root{
+  --bg-button:#FCB72B; /*cuando lo selecciono es transparente */
+  --clr-letter:#495567;
+  --dim-grey:#939CAA;
+  --light-grey: #E5ECF4;
+  --snow: #F2F5F9;
+  --Light-yellow:#FFF4DF;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+}
+.hamburger{
+ position: absolute;
+ top: 24px;
+ left: 32px;
+}
+.logo{  
+  height: 20px;
+  left:150px ;
+  top: 20px;
+}
+.h2{
+  margin: 0;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 24px;
+  margin-top: 115px;
+}
+.description{
+  margin: 0;
+  font-family:"Lexend Deca", sans-serif ;
+  font-size: 15px;
+  text-align: center;
+  line-height: 25px;
+  margin-bottom: 34px;
+}
+.img-home{
+  display: flex;
+  flex-direction: column;
+  padding-inline: 32px;
+  align-items: center;
+  height: 650px;
+  background-image: url(../assets/images/home-hero-mobile.jpg);
+  color: white;
+}
+.button{
+  width: 180px;
+  height: 56px;
+  background-color: #FCB72B;
+  border: none;
+  color: var(--snow);
+  font-weight: 700;
+}
+.right-arrow{
+  position: absolute;
+  bottom: 24px;
+  right: 250px;
+}
+.card-instruction{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.instruction{
+  display:flex ;
+  flex-direction: column;
+  align-items: center;
+  width: 311px;
+  height: 232px;
+  text-align: center;
+  margin-top: 120px;
+}
+.icon{
+  width: 56px;
+  margin-bottom: 24px;
+}
+.bodyletter{
+  font-size: 15px;
+  font-family:"Lexend Deca", sans-serif ;
+  color: #939CAA;
+  line-height: 25px;
+}
+.h3{
+  font-size: 20px;
+  font-weight: 700;
+  color: #495567;
+  margin-bottom:24px ;
 }
