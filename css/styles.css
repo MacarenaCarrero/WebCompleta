@@ -111,6 +111,12 @@ body {
   line-height: 25px;
   margin-bottom: 34px;
 }
+
+@media screen and (width >= 768px) {
+  .description {
+    
+  }
+}
 .img-home {
   position: relative;
   display: flex;
@@ -123,7 +129,7 @@ body {
   background-size: cover;
   color: white;
 }
-@media screen and (width>768px) {
+@media screen and (width>=768px) {
   .img-home::before {
     position: absolute;
     content: "";
