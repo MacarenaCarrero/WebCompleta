@@ -14,8 +14,23 @@
   </head>
   <body>
     <header class="header">
-      <img class="hamburger" src="./assets/icons/hamburger.svg" alt="" />
-      <img class="logo" src="./assets/logo.svg" alt="" />
+      <div>
+        <img
+          id="hamburger"
+          class="hamburger"
+          src="./assets/icons/hamburger.svg"
+          alt=""
+        />
+        <img class="logo" src="./assets/logo.svg" alt="" />
+      </div>
+      <nav>
+        <ul id="menu" class="menu menu-show">
+          <li class="menu-item"><a class="menu-link" href="">About</a></li>
+          <li class="menu-item"><a class="menu-link" href="">Location</a></li>
+          <li class="menu-item"><a class="menu-link" href="">Careers</a></li>
+          <button class="button button-menu">Get Scootin</button>
+        </ul>
+      </nav>
     </header>
     <main>
       <div class="img-home">
@@ -26,11 +41,6 @@
           nearest bike, unlock it with a tap, and you’re away!
         </p>
         <button class="button">Get Scootin</button>
-        <img
-          class="right-arrow"
-          src="./assets/patterns/right-arrow.svg"
-          alt=""
-        />
       </div>
       <div class="card-instruction">
         <div class="instruction">
@@ -44,14 +54,17 @@
         </div>
         <div class="instruction">
           <img class="icon" src="./assets/icons/scooter.svg" alt="" />
-          <span class="h3" >Pick your scooter</span>
-          <span class="bodyletter">We show the most
-          important info for the scooters closest to you. So you know how much
-          charge they have left and can see roughly how much it will cost.</span
+          <span class="h3">Pick your scooter</span>
+          <span class="bodyletter"
+            >We show the most important info for the scooters closest to you. So
+            you know how much charge they have left and can see roughly how much
+            it will cost.</span
+          >
         </div>
         <div class="instruction">
-          <img class="icon" src="./assets/icons/ride.svg" alt="" /><span class="h3">Enjoy the
-          ride</span
+          <img class="icon" src="./assets/icons/ride.svg" alt="" /><span
+            class="h3"
+            >Enjoy the ride</span
           ><span class="bodyletter"
             >Scan the QR code and the bike will unlock. Retract the cable lock,
             put on a helmet, and you’re off! Always lock bikes away from
@@ -60,5 +73,6 @@
         </div>
       </div>
     </main>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
