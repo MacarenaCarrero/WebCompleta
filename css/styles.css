@@ -239,28 +239,21 @@ gap: 79px;
   }
 }
 .procces{
-  position: relative;
   display: flex;
  flex-direction: column;
   align-items: center;
   padding-inline: 32px;
   height: 698px;
+  margin-bottom: 120px;
 }
-.procces::after{
-  position: absolute;
-  content: "";
-  background-image: url(../assets/patterns/left-downward-arrow.svg);
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  top: 173px;
-  right: -40px;
-}
-.images-L{
+
+.images-L{ 
+  position: relative;
   width: 311px;
   border-radius: 160px;
   margin-bottom: 56px;
 }
+
 .title{
   font-size: 32px;
   font-weight: 700;
@@ -277,4 +270,28 @@ gap: 79px;
   line-height: 25px;
   text-align: center;
   margin-bottom: 32px;
+  
 }
+.download{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 320px;
+  background-color: #495567;
+  padding-inline: 32px;
+  }
+  .titleWhite{
+    color: var(--snow);
+    font-size: 32px;
+    text-align: center;
+  }
+  .playStore{
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+  }
+  .icon-appstore{
+    width: 114px;
+
+  }
