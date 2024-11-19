@@ -55,7 +55,24 @@ body {
 
 
 }
-
+.menu{
+  position: absolute;
+  top: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 64px 32px 24px;
+  width: 256px;
+  height: calc(100vh - 64px);
+  background-color:var(--Blue-Dark);
+  color: var(--snow);
+  translate: -100%;
+  transition: translate 0.3s;
+  z-index: 10;
+}
+.menu-show{ 
+translate:0;
+}
 .header{
   position: relative;
 }
@@ -65,9 +82,7 @@ body {
   justify-content: center;
   height:64px ;
 }
-.menu{
-  display: none;
-}
+
 .hamburger{
   position: absolute;
   left: 32px;
@@ -108,6 +123,12 @@ letter-spacing: var(--letter-spacing-s);
   font-size: var(--text-m);
   border: none;
   color: var(--snow);
+}
+.button-menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
 }
 .title-h4{
   font-size: var(--h4-mobile);
