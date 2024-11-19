@@ -14,118 +14,71 @@
   </head>
   <body>
     <header class="header">
-      <div>
+      <div class="top-bar">
         <img
-          id="hamburger"
+          id="menu-icon"
           class="hamburger"
           src="./assets/icons/hamburger.svg"
-          alt=""
+          alt="hamburguer icon"
         />
-        <img class="logo" src="./assets/logo.svg" alt="" />
+        <img src="./assets/logo.svg" alt="logo" />
       </div>
       <nav>
-        <ul id="menu" class="menu menu-show">
-          <li class="menu-item"><a class="menu-link" href="">About</a></li>
-          <li class="menu-item"><a class="menu-link" href="">Location</a></li>
-          <li class="menu-item"><a class="menu-link" href="">Careers</a></li>
-          <button class="button button-menu">Get Scootin</button>
+        <ul id="menu" class="menu">
+          <li class="menu-item">
+            <a class="menu-link" href="#">About</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="./html/location.html">Location</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">Careers</a>
+          </li>
+          <li class="menu-item menu-item-last button">
+            <a class="menu-link" href="#">Get Scootin</a>
+          </li>
         </ul>
       </nav>
-    </header>
-    <main>
-      <div class="img-home">
-        <h2 class="h2">Scooter sharing made simple</h2>
-        <p class="description">
+      <div class="banner">
+        <h1 class="main-title">Scooter sharing made simple</h1>
+        <p class="textM">
           Scoot takes the hassle out of urban mobility. Our bikes are placed in
           convenient locations in each of our cities. Use our app to locate the
           nearest bike, unlock it with a tap, and you’re away!
         </p>
         <button class="button">Get Scootin</button>
       </div>
-      <div class="card-instruction">
-        <div class="instruction">
-          <img class="icon" src="./assets/icons/locate.svg" alt="" />
-          <div class="title-instruction">
-            <span class="h3">Locate with app</span>
-            <span class="bodyletter"
-              >Use the app to find the nearest scooter to you. We are
-              continuously placing scooters in the areas with most demand, so
-              one should never be too far away.
-            </span>
-          </div>
+    </header>
+    <main>
+      <section>
+        <div class="card-instruction">
+          <img class="iconoS" src="./assets/icons/locate.svg" alt="locate" />
+          <span class="title-h4">Locate with app</span>
+          <span class="textMgrey"
+            >Use the app to find the nearest scooter to you. We are continuously
+            placing scooters in the areas with most demand, so one should never
+            be too far away.
+          </span>
         </div>
-        <div class="instruction">
-          <img class="icon" src="./assets/icons/scooter.svg" alt="" />
-          <div class="title-instruction">
-            <span class="h3">Pick your scooter</span>
-            <span class="bodyletter"
-              >We show the most important info for the scooters closest to you.
-              So you know how much charge they have left and can see roughly how
-              much it will cost.</span
-            >
-          </div>
+        <div class="card-instruction">
+          <img class="iconoS" src="./assets/icons/scooter.svg" alt="scooter" />
+          <span class="title-h4">Pick your scooter</span>
+          <span class="textMgrey"
+            >We show the most important info for the scooters closest to you. So
+            you know how much charge they have left and can see roughly how much
+            it will cost.
+          </span>
         </div>
-        <div class="instruction">
-          <img class="icon" src="./assets/icons/ride.svg" alt="" />
-          <div class="title-instruction">
-            <span class="h3">Enjoy the ride</span
-            ><span class="bodyletter"
-              >Scan the QR code and the bike will unlock. Retract the cable
-              lock, put on a helmet, and you’re off! Always lock bikes away from
-              walkways and accessibility ramps.</span
-            >
-          </div>
+        <div class="card-instruction">
+          <img class="iconoS" src="./assets/icons/ride.svg" alt="ride" />
+          <span class="title-h4">Enjoy the ride</span>
+          <span class="textMgrey"
+            >Scan the QR code and the bike will unlock. Retract the cable lock,
+            put on a helmet, and you’re off! Always lock bikes away from
+            walkways and accessibility ramps.
+          </span>
         </div>
-      </div>
-      <div class="procces img1">
-        <img class="images-L" src="./assets/images/telemetry.jpg" alt="" />
-        <span class="title">Easy to user iding telemetry</span>
-        <span class="bodyletter2"
-          >The Scoot app is available with riding telemetry. This means it can
-          show you your average speed, how long you've been using the scooter,
-          your traveling distance, and many more things all in an easy to use
-          app.</span
-        >
-        <button class="button">Learn More</button>
-      </div>
-      <div class="procces img2">
-        <img class="images-L" src="./assets/images/near-you.jpg" alt="" />
-        <span class="title">Coming to a city near you</span>
-        <span class="bodyletter2"
-          >Scoot is available in 4 major cities so far. We’re expanding rapidly,
-          so be sure to let us know if you want to see us in your hometown.
-          We’re aiming to let our scooters loose on 23 cities over the coming
-          year.</span
-        >
-        <button class="button">Learn More</button>
-      </div>
-      <div class="procces img3">
-        <img class="images-L" src="./assets/images/payments.jpg" alt="" />
-        <span class="title">Zero hassle payments</span>
-        <span class="bodyletter2"
-          >Our payment is as easy as one two three. We accept most credit cards
-          and debit cards. You can also link your PayPal account inside the app.
-          Need to pay later? No worries! You can defer payment for up to a
-          month.</span
-        >
-        <button class="button">Learn More</button>
-      </div>
-      <div class="download">
-        <span class="title titleWhite">Sign up and Scoot off today</span>
-        <div class="playStore">
-          <img
-            class="icon-appstore"
-            src="./assets/icons/app-store.svg"
-            alt=""
-          />
-          <img
-            class="icon-appstore"
-            src="./assets/icons/google-play.svg"
-            alt=""
-          />
-        </div>
-      </div>
+      </section>
     </main>
-    <script src="./js/scripts.js"></script>
   </body>
 </html>
