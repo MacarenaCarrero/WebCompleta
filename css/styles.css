@@ -32,7 +32,7 @@ body {
 --snow: #F2F5F9;
 --Light-Yellow: #FFF4DF;
 
---soace-mono:'Space mono', monospace;
+--space-mono:'Space mono', monospace;
 --lexend-deca: 'Lexend deca', 'sans-serif';
 
 --h1-mobile:40px;
@@ -70,6 +70,18 @@ body {
   transition: translate 0.3s;
   z-index: 10;
 }
+@media screen and (width >=768px){
+  .menu{
+    flex-direction: row;
+    justify-content: center;
+    translate: 0;
+    background-color:transparent;
+    top: -34px;
+    color: var(--Dim-Grey);
+    width: 523px;
+    right: 0;
+  }
+}
 .menu-show{ 
 translate:0;
 }
@@ -82,12 +94,26 @@ translate:0;
   justify-content: center;
   height:64px ;
 }
-
+@media screen and (width >=768px){
+  .top-bar{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 96px;
+    padding-inline: 40px;
+  }
+}
 .hamburger{
   position: absolute;
   left: 32px;
   top: 24px;
 }
+@media screen and (width >=768px){
+  .hamburger{
+    display: none;
+  }
+}
+
 .banner{
   display: flex;
   position: relative;
@@ -96,18 +122,30 @@ translate:0;
   justify-content: center;
   height: 650px;
   background-image: url(../assets/images/home-hero-mobile.jpg);
+  background-size: 100%;
   padding-inline: 32px;
   margin-bottom: 120px;
 }
-
+@media screen and (width >=768px){
+  .banner{
+    background-image: url(../assets/images/home-hero-tablet.jpg);
+    background-repeat: no-repeat;
+    padding-inline: 97px;
+  }
+  .banner:after{
+    content: "";
+  }
+}
 .main-title{
+  margin: 0;
   font-size: var(--h1-mobile);
-  font-family:var(--soace-mono);
+  font-family:var(--space-mono);
 line-height: var(--line-height-xl);
 color: var(--snow);
 text-align: center;
 letter-spacing: var(--letter-spacing-s);
 }
+
 .textM{
   font-size: var(--text-m);
   text-align: center;
@@ -117,7 +155,7 @@ letter-spacing: var(--letter-spacing-s);
 }
 .button{
   background-color: var(--yellow);
-  width:180px ;
+  width:180px;
   height: 53px;
   font-family: var(--lexend-deca);
   font-size: var(--text-m);
@@ -126,13 +164,19 @@ letter-spacing: var(--letter-spacing-s);
 }
 .button-menu{
   display: flex;
+  width:180px;
   align-items: center;
   justify-content: center;
   margin-top: auto;
 }
+@media screen and (width >=768px){
+  .button-menu{
+    margin-top: 0;
+  }
+}
 .title-h4{
   font-size: var(--h4-mobile);
-  font-family: var(--soace-mono);
+  font-family: var(--space-mono);
   font-weight: var(--font-weigth-bold);
   margin-bottom: var(--margin-bottom-s);
   color: var(--Dark-Navy);
@@ -145,9 +189,34 @@ letter-spacing: var(--letter-spacing-s);
   align-items: center;
   margin-bottom: var(--margin-bottom-l);
 }
+@media screen and (width >=768px){
+  .card-instruction{
+    flex-direction: row;
+    gap: 79px;
+    padding-inline: 97px;
+  }
+}
+.instruction-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+@media screen and (width >=768px){
+  .instruction-text{
+      text-align: left;
+      align-items: start;
+  }
+}
+
 .iconoS{
 width:56px ;
 margin-bottom: var(--margin-bottom-s);
+}
+@media screen and (width >=768px){
+  .iconoS{
+    width: 96px;
+  }
 }
 .textMgrey{
  font-size: var(--text-m); 
@@ -155,4 +224,53 @@ margin-bottom: var(--margin-bottom-s);
  line-height: var(--line-height-m);
   margin-bottom: var(--margin-bottom-m);
   text-align: center;
+}
+@media screen and (width >=768px){
+  .textMgrey{
+    text-align: left;
+  }
+}
+.img-redonda{
+  position: relative;
+  width: 311px;
+  border-radius: 160px;
+  margin-bottom: 56px;
+}
+.arrowDownLeft{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 32px;
+  background-image: url(../assets/patterns/left-downward-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 32px 150px;
+  margin-bottom: 120px;
+}
+.arrowUpRigth{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 32px;
+  background-image: url(../assets/patterns/right-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: -150px 50px;
+  margin-bottom: 120px;
+}
+.arrowUpLeft{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 32px;
+  background-image: url(../assets/patterns/left-downward-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 100px -10px;
+  margin-bottom: 120px;
+}
+.title-h2{
+  font-size: var(--h2--mobile);
+  font-family: var(--space-mono);
+  color: var(--Blue-Dark);
+  font-weight: var(--font-weigth-bold);
+  text-align: center;
+  margin-bottom: var(--margin-bottom-s);
 }
